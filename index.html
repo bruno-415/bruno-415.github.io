@@ -3,51 +3,238 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Blog</title>
+    <title>Ocean Acidification Equilibrium Reaction</title>
         <style>
             
             body {
-                background-color: rgb(191, 255, 250);
+                background-color: #F3FCFE;
                 font-family: "Optima", sans-serif;
+                font-size: 130%;
+                color: #01141A;
+                line-height: 135%;
+                margin: auto;
+            }       
+
+            #ocean-header-background {
+                position: relative;
+                width: 100%;
+                height: 450px;
+                object-fit: cover;
+                object-position: 0 10%;
             }
-            
+
             h1 {
+                position: absolute;
+                top: -160px;
                 font-weight: bold;
-                color: rgb(20, 98, 122);
-            }
-            
-            #contents-title {
-                color: rgb(43, 95, 173);
+                font-size: 50px;
+                color: white;
+                padding: 200px;
+                text-align: center;
+                line-height: 135%;
             }
             
             h2 {
                 color: rgb(21, 62, 74);
                 font-size: 1.4em;
-                font-style: italic
+            }
+
+            #ocean-acidification-image {
+                width: 45%;
+                float: right;
+                margin-top: 180px;
+                margin-left: 45px;
+                margin-right: 30px;
+                margin-bottom: 80px;
+            }
+
+            #potential-energy-diagram {
+                width: 60%;
+                height: 500px;
+                object-fit: cover;
+                object-position: 0 30%;
+            }
+
+            .introduction-section, .conclusion-section {
+                margin: 20px;
+                padding: 20px;
+            }
+
+            #introduction-header, #conclusion-header {
+                text-align: center;
+            }
+
+            #equilibrium-header {
+                position: relative;
+                left: 60%;
+            }
+
+            #introduction-b {
+                width: 80%;
+            }
+
+            #introduction-c {
+                text-align: center;
+            }
+
+            #introduction-d {
+                display: flex;
+                flex-wrap: wrap;
+            }
+
+            .equilibrium-section {
+                background-color: white;
+                padding: 40px;
+            }
+
+            sup, sub {
+                vertical-align: baseline;
+                position: relative;
+                top: -0.4em;
+            }
+            sub { 
+                top: 0.4em; 
+            }
+
+            table, th, td {
+                border: 1px solid black;
+                border-collapse: collapse;
+            }
+
+            th, td {
+                padding: 10px;
+            }
+
+            #bonds-broken-table, #bonds-formed-table {
+                margin-right: 50px;
+            }
+
+            #bond-algebra {
+                line-height: 200%;
+            }
+
+            #coral-image {
+                float: left;
+                width: 30%;
+                margin-top: 10px;
+                margin-right: 30px;
+                margin-bottom: 10px;
+            }
+
+            .conclusion-section {
+                margin: auto;
+                margin-bottom: 50px;
+                width: 80%;
+            }
+
+            #conclusion-info {
+                font-size: 105%;
             }
             
         </style>
     </head>
     <body>
         
-        <h1>Blog</h1>
+        <img id="ocean-header-background" src="https://wallpapercave.com/wp/unXHCFo.jpg" alt="Background image of a sunset over an ocean">
 
-        <h3 id="contents-title">Contents</h3>
-        <ul>
-            <a href="#post-1"><li>First post: Learning HTML and CSS</li></a>
-            <a href="#post-2"><li>Second post: Improving the page</li></a>
-        </ul>
+        <h1>The Chemistry of Ocean Acidification and Shrinking Coral Reefs</h1>
+
+        <img id="ocean-acidification-image" src="https://www.noaa.gov/sites/default/files/styles/scale_crop_1120x534/public/thumbnails/image/pmel-oa-imageee_landscape.jpg?itok=iPSaTM4w" alt="Graphic showing the chemical reaction causing ocean acidification">
+
+        <div class="introduction-section"><h2 id="introduction-header">Introduction</h2>
         
-        <h2 id="post-1">First post: Learning HTML and CSS</h2>
-        <h6>Posted on 3/22/2021 at 4:46 PM</h6>
+        <p><strong>a)</strong> As humans continue to pump greenhouse gases into the atmosphere, our oceans are affected not only by the world’s rising temperatures but also by the enormous new influx of carbon dioxide. Around 30% of CO<sub>2</sub> emissions end up dissolving into the ocean, potentially causing significant disruptions to the ecosystems within.</p> <p>After being trapped in the ocean, this carbon dioxide reacts with the water to form carbonic acid, which easily breaks down into bicarbonate and hydrogen ions (making the ocean more acidic). These hydrogen ions bind easily with carbonate ions to form more bicarbonate. Normally, many of these carbonate ions would have bonded with calcium ions to form calcium carbonate (CaCO<sub>3</sub>). A wide variety of marine organisms, including coral, crabs, microscopic phytoplankton, and others, depend on calcium carbonate to build their protective outer layers. With ever-increasing amounts of hydrogen ions present to instead form bicarbonate, these creatures are struggling more and more to survive.</p>
+            <br>
+        <p id="introduction-b"><strong>b)</strong> This reaction, CO<sub>2</sub> (aq) + H<sub>2</sub>O + CO<sub>3</sub><sup>2-</sup> (aq) ↔ 2 HCO<sub>3</sub><sup>-</sup> (aq), is the net result of the reversible reactions CO<sub>2</sub> (aq) + H<sub>2</sub>O ↔ HCO<sub>3</sub><sup>-</sup> (aq) + H<sup>+</sup> (aq) and HCO<sub>3</sub><sup>-</sup> (aq) ↔ CO<sub>3</sub><sup>2-</sup> (aq) + H<sup>+</sup> (aq). Like most chemical reactions, these occur when the reactants collide in the correct orientation and with enough energy to produce an effective collision.</p>
+            <br>
+        <div id="introduction-c"><p><strong>c)</strong> Reaction: CO<sub>2</sub> (aq) + H<sub>2</sub>O + CO<sub>3</sub><sup>2-</sup> (aq) ↔ 2 HCO<sub>3</sub><sup>-</sup> (aq)</p>
+            <img id="potential-energy-diagram" src="http://drive.google.com/uc?export=view&id=1WTF3Tj2PUk6NKuOd9hHVb8bDiky1bsUS" alt="Potential energy diagram of the reaction"></div><br><br>
+
+        <p style="text-align: center;"><strong>d)</strong> Determining value of ∆H (imagining that all molecules involved are gaseous):</p>
+
+        <div id="introduction-d"><table id="bonds-broken-table">
+                <tr>
+                    <th colspan=3>Bonds Broken</th>
+                </tr>
+                <tr>
+                    <th>Type</th>
+                    <th>Number</th>
+                    <th>kJ/mol</th>
+                </tr>
+                <tr>
+                    <td>C=O (in CO<sub>2</sub>)</td>
+                    <td>2</td>
+                    <td>799 × 2 = 1598</td>
+                </tr>
+                <tr>
+                    <td>C=O</td>
+                    <td>1</td>
+                    <td>745</td>
+                </tr>
+                <tr>
+                    <td>C–O</td>
+                    <td>2</td>
+                    <td>358 × 2 = 716</td>
+                </tr>
+                <tr>
+                    <td>O–H</td>
+                    <td>2</td>
+                    <td>467 × 2 = 934</td>
+                </tr>
+                <tr>
+                    <td colspan=3>Total kJ/mol = (1598 + 745 + 934) = 3993</td>
+                </tr>
+            </table>
+
+            <table id="bonds-formed-table">
+                <tr>
+                    <th colspan=3>Bonds Formed</th>
+                </tr>
+                <tr>
+                    <th>Type</th>
+                    <th>Number</th>
+                    <th>kJ/mol</th>
+                </tr>
+                <tr>
+                    <td>C=O</td>
+                    <td>1</td>
+                    <td>745</td>
+                </tr>
+                <tr>
+                    <td>C–O</td>
+                    <td>2</td>
+                    <td>358 × 2 = 716</td>
+                </tr>
+                <tr>
+                    <td>O–H</td>
+                    <td>2</td>
+                    <td>467</td>
+                </tr>
+                <tr>
+                    <td colspan=3>Total kJ/mol = (745 + 716 + 467) = 1928</td>
+                </tr>
+            </table>
+
+        <p id="bond-algebra"> ∆H<sub>rxn</sub> = ∑n(bonds broken) - ∑m(bonds formed) <br>
+            ∆H<sub>rxn</sub> = (3393) - (1928) <br>
+            ∆H<sub>rxn</sub> = +2065 kJ/mol</p></div></div>
         
-        <p>Learning how to use <a href="https://en.wikipedia.org/wiki/HTML"><strong>HTML</strong></a> and <a href="https://en.wikipedia.org/wiki/CSS"><strong>CSS</strong></a>. Will update soon</p>
+        <div class="equilibrium-section"><h2 id="equilibrium-header">Equilibrium</h2>
+
+            <img id="coral-image" src="https://als.lbl.gov/wp-content/uploads/2017/11/364mass1.jpg" alt="Image of coral">
         
-        <h2 id="post-2">Second post: Improving the page</h2>
-        <h6>Posted on 3/22/2021 at 4:48 PM</h6>
+        <p> <strong>a)</strong> Normally (before the Industrial Revolution), equilibrium maintained the average pH of the ocean at about 8.2. The equilibrium reaction is the net reaction of a couple different steps which were listed earlier.</p>
+
+            <p><strong>b)</strong> Maintaining equilibrium for this reaction is important for the health of our oceans. If the reaction shifts towards the right (which it is), the oceans will become more acidic, and many species will die off if they are unable to adapt to the change. Calcium carbonate shells, which many marine organisms need, may begin to dissolve, depending on where in the ocean they are. To make matters worse, they will struggle to build their shells at all since there will be more and more hydrogen ions to effectively steal carbonate from calcium, slowing the production of calcium carbonate. Coral reefs, many of which are already suffering from coral bleaching, will shrink because the coral will have a hard time even growing their skeletons. The negative ripple effects of the coral disappearing will be felt throughout those ecosystems, and mass extinctions of marine species will be a likely outcome.</p>
+
+            <p><strong>c)</strong> Increasing quantities of carbon dioxide dissolving into the oceans is causing the equilibrium shift. This carbon dioxide comes from CO<sub>2</sub> emitting human activity, especially burning fossil fuels.</p>
+
+            <p><strong>d)</strong> Le Chatelier’s principle tells us that increasing the concentration of CO<sub>2</sub> would shift the equilibrium to the opposite side of the reaction. This means that the concentration of HCO<sub>3</sub><sup>-</sup> would increase, while concentrations of H<sub>2</sub>O and CO<sub>3</sub><sup>2-</sup> would decrease.</p>
+
+            <p><strong>e)</strong> If the temperature of the oceans increases (which it is), we would expect the reaction to shift toward the endothermic direction. This still means an increase in the concentration of HCO<sub>3</sub><sup>-</sup>, and a decrease in concentrations of H<sub>2</sub>O and CO<sub>3</sub><sup>2-</sup>.</p></div>
         
-        <p>Switched the font to <em>Optima</em> <br> And added lots of colors</p>
-        <img src="https://cdn.kastatic.org/third_party/javascript-khansrc/live-editor/build/images/avatars/mr-pink.png">
-        
+        <div class="conclusion-section"><h2 id="conclusion-header">Conclusion</h2>
+
+        <p id="conclusion-info">As carbon emissions continue to shift the equilibrium more and more toward an acidic ocean, the risk of the incredible diversity of our oceans slipping away becomes more and more real. Wildlife as well as local human communities around the world depend on these waters for their livelihood, so this outcome would be disastrous. Right now, the best way for humans to shift the equilibrium the other way is to massively cut carbon emissions into the atmosphere. Rapid action to save our oceans and everything that relies on them will be crucial in the coming years and decades.</p></div>
         
     </body>
